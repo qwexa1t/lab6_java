@@ -12,15 +12,15 @@ public class Trapezoid extends Figure
         upper_base = 0;
         height = 0;
     }
-    public Trapezoid(int value_lower_base, int value_upper_base, int value_height) //Конструктор с параметрами
+    public Trapezoid(int lower_base, int upper_base, int height) //Конструктор с параметрами
     {
-        lower_base = value_lower_base;
-        upper_base = value_upper_base;
-        height = value_height;
+        this.lower_base = lower_base;
+        this.upper_base = upper_base;
+        this.height = height;
     }
-    public Trapezoid(int value_lower_base) //Конструктор с 1 параметром
+    public Trapezoid(int lower_base) //Конструктор с 1 параметром
     {
-        lower_base = value_lower_base;
+        this.lower_base = lower_base;
         upper_base = 1;
         height = 1;
     }

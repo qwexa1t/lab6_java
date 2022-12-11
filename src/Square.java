@@ -8,9 +8,9 @@ public class Square extends Figure
     {
         side = 4;
     }
-    public Square(int value_side) //Конструктор с параметрами
+    public Square(int side) //Конструктор с параметрами
     {
-        side = value_side;
+        this.side = side;
     }
     public void set() // Установка значений с клавиатуры
     {

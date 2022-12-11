@@ -10,14 +10,14 @@ public class Rectangle extends Figure
         length = 0;
         width = 0;
     }
-    public Rectangle(int value_length,int value_width) //Конструктор с параметрами
+    public Rectangle(int length,int width) //Конструктор с параметрами
     {
-        length = value_length;
-        width = value_width;
+        this.length = length;
+        this.width = width;
     }
-    public Rectangle(int value_length) //Конструктор с 1 параметром
+    public Rectangle(int length) //Конструктор с 1 параметром
     {
-        length = value_length;
+        this.length = length;
         width = 1;
     }
     public void set() // Установка значений с клавиатуры

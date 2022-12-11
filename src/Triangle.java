@@ -10,10 +10,10 @@ public class Triangle extends Figure
         base = 0;
         height = 0;
     }
-    public Triangle(int value_base,int value_height) //Конструктор с параметрами
+    public Triangle(int base,int height) //Конструктор с параметрами
     {
-        base = value_base;
-        height = value_height;
+        this.base = base;
+        this.height = height;
     }
     public void set() // Установка значений с клавиатуры
     {

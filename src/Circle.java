@@ -9,9 +9,9 @@ public class Circle extends Figure
     {
         radius = 0;
     }
-    public Circle(int value_radius) //Конструктор с параметрами
+    public Circle(int radius) //Конструктор с параметрами
     {
-        radius = value_radius;
+        this.radius = radius;
     }
     public void set() // Установка значений с клавиатуры
     {

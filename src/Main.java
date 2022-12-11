@@ -5,6 +5,7 @@ public class Main
     public static void main(String[] args)
     {
         int N;
+        boolean firstin = true;
 
         do
         {
@@ -23,13 +24,22 @@ public class Main
             switch (N)
             {
                 case 1:
-                    System.out.println("\nВы выбрали квадрат\n");
-                    System.out.println("Пример");
-                    Square square = new Square();
-                    square.print();
-                    System.out.println("\nВведите данные: ");
-                    square.set();
-                    square.print();
+                    if (firstin)
+                    {
+                        System.out.println("\nВы выбрали квадрат\n");
+                        System.out.println("Пример");
+                        Square square = new Square();
+                        square.print();
+                        System.out.println("\nВведите данные: ");
+                        square.set();
+                        square.print();
+                        System.out.println("Количество созданных квадратов: " + square.GetCount());
+                        firstin = false;
+                    }
+                    else
+                    {
+                        System.out.print("\nВы уже создавали объекты типа 'Квадрат' \n");
+                    }
                     break;
                 case 2:
                     System.out.println("\nВы выбрали Прямоугольник\n");

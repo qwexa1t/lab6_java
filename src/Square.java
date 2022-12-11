@@ -3,7 +3,11 @@ import java.util.Scanner;
 public class Square extends Figure
 {
     private int side;
-
+    private static int Count = 0;
+    static int GetCount()
+    {
+        return Count;
+    }
     public Square() //Конструктор без параметров
     {
         side = 4;
@@ -17,6 +21,7 @@ public class Square extends Figure
         Scanner scanner = new Scanner(System.in);
         System.out.print("Введите сторону:");
         side = scanner.nextInt();
+        Count++;
     }
     public float area() { return side * side; }
 

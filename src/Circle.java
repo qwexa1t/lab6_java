@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Circle extends Figure
 {
     private int radius;
-    final float PI = 3.1415926f;
+    public final float PI = 3.1415926f;
 
     public Circle() //Конструктор без параметров
     {

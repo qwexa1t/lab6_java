@@ -6,6 +6,7 @@ public class Main
     {
         int N;
         boolean firstin = true;
+        int kolvo;
 
         do
         {
@@ -19,7 +20,12 @@ public class Main
             System.out.println("6) Завершить программу");
             System.out.print("\nВведите номер фигуры:");
             Scanner scanner = new Scanner(System.in);
-            N = scanner.nextInt();
+
+            while ((N = scanner.nextInt()) <= 0 || N > 6)
+            {
+                System.out.print("\nВы ввели Неверный номер. Повторите попытку.\n");
+                System.out.print("\nВведите номер фигуры:");
+            }
 
             switch (N)
             {
@@ -46,9 +52,16 @@ public class Main
                     System.out.println("Пример");
                     Rectangle rectangle = new Rectangle(7);
                     rectangle.print();
-                    System.out.println("\nВведите данные: ");
-                    rectangle.set();
-                    rectangle.print();
+                    System.out.println("\nСколько Прямоугольников создать? (1-5)");
+                    kolvo = scanner.nextInt();
+                    Rectangle[] rectangle_arr = new Rectangle[5];
+                    for (int i = 0; i < kolvo; i++)
+                    {
+                        System.out.println("\nВведите данные: ");
+                        rectangle_arr[i] = new Rectangle();
+                        rectangle_arr[i].set();
+                        rectangle_arr[i].print();
+                    }
                     break;
                 case 3:
                     System.out.println("\nВы выбрали Треугольник\n");
@@ -73,9 +86,20 @@ public class Main
                     System.out.println("Пример");
                     Circle circle = new Circle(6);
                     circle.print();
-                    System.out.println("\nВведите данные: ");
-                    circle.set();
-                    circle.print();
+                    System.out.println("\nСколько Прямоугольников создать? (1-5)");
+                    kolvo = scanner.nextInt();
+                    //Объявление двумерного динамического массива объектов:
+                    Circle[][] circle_arr = new Circle[5][5];
+                    for (int i = 0; i < kolvo; i++)
+                    {
+                        for (int j = 0; j < 1; j++)
+                        {
+                            System.out.println("\nВведите данные: ");
+                            circle_arr[i][j] = new Circle();
+                            circle_arr[i][j].set(); //Установка значений
+                            circle_arr[i][j].print();
+                        }
+                    }
                     break;
             }
         } while (N!=6);

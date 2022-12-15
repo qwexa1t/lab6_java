@@ -5,7 +5,6 @@ public class Main
     public static void main(String[] args)
     {
         int N;
-        boolean firstin = true;
         int kolvo;
 
         do
@@ -27,30 +26,23 @@ public class Main
                 System.out.print("\nВведите номер фигуры:");
             }
 
-            switch (N)
+            switch(N)
             {
                 case 1:
-                    if (firstin)
-                    {
-                        System.out.println("\nВы выбрали квадрат\n");
-                        System.out.println("Пример");
-                        Square square = new Square(4);
-                        Square square1 = new Square();
-                        Square square2 = new Square();
-                        square.print();
-                        System.out.println("\nВведите данные: ");
-                        square1.set();
-                        square1.print();
-                        System.out.println("\nВведите данные: ");
-                        square2.set();
-                        square2.print();
-                        Square.GetCount(); //Вывод количества объектов
-                        firstin = false;
-                    }
-                    else
-                    {
-                        System.out.print("\nВы уже создавали объекты типа 'Квадрат' \n");
-                    }
+                    System.out.println("\nВы выбрали квадрат\n");
+                    System.out.println("Пример");
+                    Square square = new Square(4);
+                    Square square1 = new Square();
+                    Square square2 = new Square();
+                    square.print();
+                    System.out.println("\nВведите данные: ");
+                    square1.set();
+                    square1.print();
+                    System.out.println("\nВведите данные: ");
+                    square2.set();
+                    square2.print();
+                    Square.GetCount(); //Вывод количества объектов
+                    Square.ResetCount(); //Обнуление счетчика
                     break;
                 case 2:
                     System.out.println("\nВы выбрали Прямоугольник\n");

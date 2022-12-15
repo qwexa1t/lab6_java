@@ -8,6 +8,10 @@ public class Square extends Figure
     {
         System.out.println("Количество созданных квадратов: " + Count);
     }
+    public static void ResetCount()
+    {
+        Count = 0;
+    }
     public Square() //Конструктор без параметров
     {
         side = 4;

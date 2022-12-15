@@ -4,9 +4,9 @@ public class Square extends Figure
 {
     private int side;
     private static int Count = 0;
-    static int GetCount()
+    public static void GetCount()
     {
-        return Count;
+        System.out.println("Количество созданных квадратов: " + Count);
     }
     public Square() //Конструктор без параметров
     {

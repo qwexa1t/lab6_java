@@ -34,7 +34,7 @@ public class Main
                     {
                         System.out.println("\nВы выбрали квадрат\n");
                         System.out.println("Пример");
-                        Square square = new Square();
+                        Square square = new Square(4);
                         Square square1 = new Square();
                         Square square2 = new Square();
                         square.print();

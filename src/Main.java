@@ -67,7 +67,7 @@ public class Main
                 case 3:
                     System.out.println("\nВы выбрали Треугольник\n");
                     System.out.println("Пример");
-                    Triangle triangle = new Triangle(3,5);
+                    Triangle triangle = new Triangle("Голубой",3,5);
                     triangle.print();
                     System.out.println("\nВведите данные: ");
                     triangle.set();

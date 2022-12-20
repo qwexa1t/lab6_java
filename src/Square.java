@@ -15,6 +15,7 @@ public class Square extends Figure
     public Square() //Конструктор без параметров
     {
         side = 4;
+        Count++;
     }
     public Square(int side) //Конструктор с параметрами
     {
@@ -35,7 +36,6 @@ public class Square extends Figure
             e.printStackTrace(); //Вывод номера строки, в которой произошло исключение
             System.exit(1);
         }
-        Count++;
     }
     public float area() { return side * side; }
 

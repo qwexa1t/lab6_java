@@ -16,11 +16,12 @@ public class Main
             System.out.println("3) Треугольник");
             System.out.println("4) Трапеция");
             System.out.println("5) Круг");
-            System.out.println("6) Завершить программу");
+            System.out.println("6) Равносторонний треугольник");
+            System.out.println("7) Завершить программу");
             System.out.print("\nВведите номер фигуры:");
             Scanner scanner = new Scanner(System.in);
 
-            while ((N = scanner.nextInt()) <= 0 || N > 6)
+            while ((N = scanner.nextInt()) <= 0 || N > 7)
             {
                 System.out.print("\nВы ввели Неверный номер. Повторите попытку.\n");
                 System.out.print("\nВведите номер фигуры:");
@@ -106,7 +107,15 @@ public class Main
                         }
                     }
                     break;
+                case 6:
+                    System.out.println("\nВы выбрали Равносторонний Треугольник\n");
+                    System.out.println("Пример");
+                    EquilateralTriangle EqTr = new EquilateralTriangle(1);
+                    EqTr.print();
+                    System.out.println("\nВведите данные: ");
+                    EqTr.set();
+                    EqTr.print();
             }
-        } while (N!=6);
+        } while (N!=7);
     }
 }

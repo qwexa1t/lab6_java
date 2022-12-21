@@ -34,7 +34,7 @@ public class Trapezoid extends Figure
         System.out.print("Введите Высоту:");
         height = scanner.nextInt();
     }
-    public float area()
+    public double area()
     {
         return 0.5f * (lower_base + upper_base) * height;
     }

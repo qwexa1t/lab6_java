@@ -19,7 +19,7 @@ public class Circle extends Figure
         System.out.print("Введите Радиус:");
         radius = scanner.nextInt();
     }
-    public float area()
+    public double area()
     {
         return PI * radius * radius;
     }

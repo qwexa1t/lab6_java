@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Triangle extends Figure
 {
-    private int base;
+    protected int base;
     private int height;
     private String color;
 
@@ -12,6 +12,11 @@ public class Triangle extends Figure
         base = 0;
         height = 0;
     }
+    public Triangle(int base) //Конструктор без параметров
+    {
+        this.base = base;
+    }
+
     public Triangle(String color, int base, int height) //Конструктор с параметрами
     {
         this.color = color;
@@ -28,7 +33,7 @@ public class Triangle extends Figure
         System.out.print("Введите Высоту:");
         height = scanner.nextInt();
     }
-    public float area()
+    public double area()
     {
         return 0.5f * base * height;
     }

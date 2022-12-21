@@ -37,7 +37,7 @@ public class Square extends Figure
             System.exit(1);
         }
     }
-    public float area() { return side * side; }
+    public double area() { return side * side; }
 
     public void print()
     {

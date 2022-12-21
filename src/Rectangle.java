@@ -28,7 +28,7 @@ public class Rectangle extends Figure
         System.out.print("Введите Ширину:");
         width = scanner.nextInt();
     }
-    public float area() { return length * width; }
+    public double area() { return length * width; }
 
     public void print()
     {

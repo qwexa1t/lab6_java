@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class EquilateralTriangle extends Triangle
+public class EquilateralTriangle extends Triangle implements Shape
 {
     public EquilateralTriangle() //Конструктор без параметров
     {

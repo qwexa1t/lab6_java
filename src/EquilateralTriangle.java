@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.text.DecimalFormat;
 
 public class EquilateralTriangle extends Triangle implements Shape
 {
@@ -24,6 +25,15 @@ public class EquilateralTriangle extends Triangle implements Shape
         System.out.println("\nСторона - " + base);
         System.out.printf("Площадь - %.2f\n", area());
     }
+
+    @Override
+    public String toString()
+    {
+        DecimalFormat df = new DecimalFormat("#.##");
+        return "\nСторона - " + this.base
+              +"\nПлощадь - " + df.format(this.area());
+    }
+
 }
 
 

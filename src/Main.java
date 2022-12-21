@@ -111,10 +111,10 @@ public class Main
                     System.out.println("\nВы выбрали Равносторонний Треугольник\n");
                     System.out.println("Пример");
                     EquilateralTriangle EqTr = new EquilateralTriangle(1);
-                    EqTr.print();
+                    System.out.println(EqTr);
                     System.out.println("\nВведите данные: ");
                     EqTr.set();
-                    EqTr.print();
+                    System.out.println(EqTr);
             }
         } while (N!=7);
     }

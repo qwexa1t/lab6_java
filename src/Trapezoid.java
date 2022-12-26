@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Trapezoid extends Figure
+public class Trapezoid extends Figure implements Cloneable
 {
     private int lower_base;
     private int upper_base;
@@ -46,4 +46,35 @@ public class Trapezoid extends Figure
         System.out.println("Высота - " + height);
         System.out.printf("Площадь - %.2f\n", area());
     }
+
+    //Поверхностное клонирование
+    @Override
+    public Trapezoid clone() throws CloneNotSupportedException
+    {
+        return (Trapezoid) super.clone();
+    }
+
+    //Пример глубокого клонирования
+    /*
+    Класс Point, Который является полем класса Trapezoid
+
+    class Point implements Cloneable
+    {
+    // остальной код класса
+
+    public Point clone() throws CloneNotSupportedException
+    {
+        return (Point) super.clone();
+    }
+
+    }
+     @Override
+    public Trapezoid clone() throws CloneNotSupportedException
+    {
+        Trapezoid trapezoid = (Trapezoid) super.clone();
+        trapezoid.point = (Point) point.clone();
+        return trapezoid;
+    }
+     */
 }
+

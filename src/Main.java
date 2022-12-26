@@ -82,6 +82,15 @@ public class Main
                     System.out.println("\nВведите данные: ");
                     trapezoid.set();
                     trapezoid.print();
+                    try {
+                        System.out.println("\nСклонированная трапеция");
+                        Trapezoid trapezoid2 = trapezoid.clone();
+                        trapezoid2.print();
+                    }
+                    catch(CloneNotSupportedException ex){
+
+                        System.out.println("Clonable not implemented");
+                    }
                     break;
                 case 5:
                     System.out.println("\nВы выбрали Круг\n");
